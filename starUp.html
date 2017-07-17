@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>启动页</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-<div class="start-btn">
-    <div class="btn-section">
-        <a href="#" name="BarrEnvelopes" class="btn-style BarrEnvelopes">弹幕红包</a>
-        <a href="#" name="AnnAccount" class="btn-style AnnAccount">年度账单</a>
+<div class="container">
+    <div class="start-btn">
+        <div class="btn-section">
+            <a href="#" name="BarrEnvelopes" class="btn-style BarrEnvelopes">弹幕红包</a>
+            <a href="annAccount.html" name="AnnAccount" class="btn-style AnnAccount">年度账单</a>
+        </div>
     </div>
 </div>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/self-adaption.js"></script>
+<script>
+    $(function () {
+        $(".container").height($(window.document).height())
+    })
+</script>
 </body>
 </html>

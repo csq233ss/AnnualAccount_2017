@@ -1,8 +1,12 @@
-body{
+html {
     width: 100%;
-    max-width: 750px;
-    margin:0 auto;
     font-size: 100px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
     background: url("../img/start.png") no-repeat;
     background-size: 100% 100%;
 }
@@ -31,11 +35,43 @@ body{
 }
 .BarrEnvelopes{
     background: url("../img/Barrage-envelopes.png") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     color: #fff;
 }
 .AnnAccount{
     background: url("../img/Annual-account.png") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     color: #681809;
+}
+@media screen and (min-width: 630px){
+    html{
+        font-size: 80px!important;
+    }
+}
+/* ***********年度账单******** */
+
+.firstPage-bg{
+    background:url("../img/firstPage-bg.png") no-repeat;
+    background-size: 100%;
+}
+.firstPage-man{
+    position: absolute;
+    top:3.26rem;
+    left: 2.01rem;
+    width: 3.1rem;
+    height:4.6rem;
+}
+.firstPage-text{
+    position: absolute;
+    top:10.74rem;
+    left: .8rem;
+    right: .87rem;
+    width:fit-content;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    line-height: .58rem;
+    font-size: .36rem;
+}
+.firstPage-text p span{
+    color: #F9702C;
 }

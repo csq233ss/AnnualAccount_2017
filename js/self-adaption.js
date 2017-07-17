@@ -10,8 +10,8 @@
     docEl.dataset.dpr = dpr;
     var recalc = function() {
         var width = docEl.clientWidth;
-        if (width / dpr > 640) {
-            width = 640 * dpr;
+        if (width / dpr > 750) {
+            width = 750 * dpr;
         }
         docEl.dataset.width = width
         docEl.dataset.percent = 100 * (width / 750);
