@@ -1,6 +1,10 @@
 html {
+    height: 100%;
     width: 100%;
     font-size: 100px;
+}
+body{
+    height: 100%;
 }
 .container{
     position: relative;
@@ -49,21 +53,27 @@ html {
     }
 }
 /* ***********年度账单******** */
-
+.display-show{
+    display: block;
+}
+.display-hide{
+    display: none;
+}
+        /*账单 1*/
 .firstPage-bg{
-    background:url("../img/firstPage-bg.png") no-repeat;
+    background:#FFFCF8 url("../img/firstPage-bg.png") no-repeat 0 -1.28rem;
     background-size: 100%;
 }
 .firstPage-man{
     position: absolute;
-    top:3.26rem;
+    top: 1.98em;
     left: 2.01rem;
     width: 3.1rem;
     height:4.6rem;
 }
 .firstPage-text{
     position: absolute;
-    top:10.74rem;
+    top:9.46rem;
     left: .8rem;
     right: .87rem;
     width:fit-content;
@@ -75,3 +85,141 @@ html {
 .firstPage-text p span{
     color: #F9702C;
 }
+    /*账单 2*/
+.secondPage-bg{
+    background:url("../img/secondPage-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.secondPage-man{
+    position: absolute;
+    top:1.84rem;
+    right: .16rem;
+    width: 5.22rem;
+    height: 6.27rem;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    width:100%;
+    height:100%;
+}
+.txt{
+    position:absolute;
+}
+#array{
+    position:absolute;z-index:999;-webkit-animation: start 1.5s infinite ease-in-out;
+}
+    /*账单 3*/
+.thirdPage-bg{
+    background: url("../img/thirdPage-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.topT{
+    top:10.46rem;
+}
+.man-attition{
+    position: absolute;
+    top:2.4rem;
+    left: 1.5rem;
+    width: 3.42rem;
+    font-size: .384rem;
+    color: #383634;
+}
+.man-attition p span{
+    color: #B03F2D;
+}
+.man-detail{
+    position: absolute;
+    top: 3.8rem;
+    left: 1.5rem;
+    font-size: .26rem;
+    color: #383634;
+}
+.man-detail .d1{
+    color: #333;
+}
+.man-detail .d2{
+    color: #B03F2D;
+    font-size: .36rem;
+}
+.man-detail .d3{
+    margin: .6rem 0 0 1.2rem;
+    width: .55rem;
+    color: #88827C;
+    font-size: .4rem;
+}
+.man-detail p{
+    line-height: .56rem;
+}
+  /*账单  4*/
+.fourthPage-bg{
+    background: url("../img/fourthPage-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.special{
+    position: absolute;
+    top: 6.12rem;
+    left: .76rem;
+    font-size: .36rem;
+    color: #162840;
+}
+.special p{
+    line-height: .7rem;
+}
+.special .s1{
+    color: #F9702C;
+}
+.special .s1 span{
+    font-size: .48rem;
+}
+.toShare{
+    position: absolute;
+    top:10.7rem;
+    left: 1.1rem;
+    width: 5.21rem;
+    height: .9rem;
+    line-height: .9rem;
+    font-size: .36rem;
+    color: #681809;
+    border-radius: .5rem;
+    background: url("../img/fourth-share.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
