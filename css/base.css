@@ -2,10 +2,16 @@ html {
     height: 100%;
     width: 100%;
     font-size: 100px;
+    font-family: "Microsoft YaHei";
 }
 body{
     height: 100%;
+    box-sizing: border-box;
 }
+a,button,input,optgroup,select,textarea {
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
 .container{
     position: relative;
     width: 100%;
@@ -59,7 +65,7 @@ body{
 .display-hide{
     display: none;
 }
-        /*账单 1*/
+/*账单 1*/
 .firstPage-bg{
     background:#FFFCF8 url("../img/firstPage-bg.png") no-repeat 0 -1.28rem;
     background-size: 100%;
@@ -85,7 +91,7 @@ body{
 .firstPage-text p span{
     color: #F9702C;
 }
-    /*账单 2*/
+/*账单 2*/
 .secondPage-bg{
     background:url("../img/secondPage-bg.png") no-repeat;
     background-size: 100% 100%;
@@ -111,28 +117,31 @@ body{
 #array{
     position:absolute;z-index:999;-webkit-animation: start 1.5s infinite ease-in-out;
 }
-    /*账单 3*/
+/*账单 3*/
 .thirdPage-bg{
     background: url("../img/thirdPage-bg.png") no-repeat;
     background-size: 100% 100%;
 }
 .topT{
-    top:10.46rem;
+    top:9.33rem;
 }
 .man-attition{
     position: absolute;
-    top:2.4rem;
+    top:2.22rem;
     left: 1.5rem;
-    width: 3.42rem;
     font-size: .384rem;
     color: #383634;
+    line-height:1;
+}
+.man-attention p{
+    line-height:1;
 }
 .man-attition p span{
     color: #B03F2D;
 }
 .man-detail{
     position: absolute;
-    top: 3.8rem;
+    top: 3.43rem;
     left: 1.5rem;
     font-size: .26rem;
     color: #383634;
@@ -151,9 +160,9 @@ body{
     font-size: .4rem;
 }
 .man-detail p{
-    line-height: .56rem;
+    line-height: .47rem;
 }
-  /*账单  4*/
+/*账单  4*/
 .fourthPage-bg{
     background: url("../img/fourthPage-bg.png") no-repeat;
     background-size: 100% 100%;
@@ -188,6 +197,377 @@ body{
     background-size: 100% 100%;
     text-align: center;
 }
+/************* 朋友圈分享 ****************/
+.friend-bg{
+    background: url("../img/friend-bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    min-height: .1rem;
+    padding-bottom: 1.93rem;
+}
+.friend-one{
+    width: 100%;
+    height: 7.57rem;
+    background: url("../img/friend-one.png") no-repeat 0 -.8rem;
+    background-size: 100%;
+    text-align: center;
+    padding-top: .6rem;
+    box-sizing: border-box;
+}
+.friend-one p{
+    font-size: .36rem;
+    color: #fff;
+}
+.friend-one p span{
+    color: #FFDF00;
+}
+.friend-one p span.card-num{
+    font-size: .6rem;
+}
+.progress-num{
+    width: 90%;
+    margin: .2rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: .3rem;
+}
+#lottery{
+    position: relative;
+    width:6.7rem;
+    height: 7rem;
+    margin: -3.6rem auto 0 auto;
+    background:url('../img/1.png') no-repeat;
+    background-size: 100% 100%
+}
+#lottery table{
+    position: absolute;
+    top:1.8rem;
+    left: .4rem;
+    width: 5.9rem
+}
+#lottery table tr{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .1rem;
+}
+#lottery table td{
+    width:1.9rem;
+    height:1.5rem;
+    line-height: 1.5rem;
+    text-align:center;
+    vertical-align:middle;
+    font-size:.4rem;
+    color:#4D2D0E;
+    font-index:-999;
+    background: url("../img/2.png") no-repeat;
+    background-size: 100% 100%
+}
+#lottery table td span{
+    font-size: .54rem;
+}
+#lottery table td a{
+    width:1.9rem;
+    height:1.5rem;
+    padding-top: .33rem;
+    display:block;
+    line-height: 1;
+    color: #fff;
+    text-decoration:none;
+    background: url("../img/3.png") no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+#lottery table td a .help-self{
+    font-size: .36rem;
+}
+#lottery table td a span{
+    font-size: .24rem;
+}
+#lottery table td.active{
+    background:url('../img/4.png') no-repeat;
+    background-size: 100% 100%;
+}
+/* 活动规则 */
+.active-rules{
+    width: 6.72rem;
+    height: 3.3rem;
+    margin:.2rem auto 0 auto;
+    padding-top: .4rem;
+    border-radius: .2rem;
+    background:rgba(255,255,255,.9);
+    box-sizing: border-box;
+}
+.rules-title{
+    width: 4.97rem;
+    height: .53rem;
+    margin:0 auto;
+    text-align: center;
+    background:url("../img/5.png") no-repeat center center;
+    background-size: 100%;
+    color: #362C51;
+    font-size: .4rem;
+}
+.rules-con{
+    padding: 0 .3rem;
+    color: #362C51;
+    font-size: .32rem;
+    box-sizing: border-box;
+}
+.rules-con li{
+    display: flex;
+    margin-top: .305rem;
+}
+.rules-con span {
+    display: block;
+    width: .4rem;
+    height: .42rem;
+    margin-right: .2rem;
+    border-radius: 50%;
+    background:#E89E92;
+    color:#B34251;
+    text-align: center;
+    font-size: .3rem;
+}
+/* 助力记录 了解小金 */
+.content{
+    width: 6.7rem;
+    height: auto;
+    min-height: .1rem;
+    margin: .2rem auto 0 auto;
+    background: rgba(255,255,255,.9);
+    border-radius: .2rem;
+    font-size: .4rem;
+    color: #362C51;
+}
+.content .item{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom:.6rem ;
+}
+.content .item .item-list{
+    position: relative;
+    width: 25%;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.opacity{
+    color:rgba(54,44,81,.5);
+}
+.hr{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .04rem;
+    display: block;
+    background: #B34251;
+}
+.box div{
+    display: none;
+}
+/*助力记录*/
+.help-record{
+    margin: auto;
+    color: #3E444F;
+    padding-bottom: .39rem;
+}
+.help-record li{
+    display: flex;
+    padding: 0 .43rem 0 .32rem;
+    margin-bottom: .4rem;
+}
+.help-record li a{
+    display: block;
+}
+.touxiang{
+    width: .8rem;
+    height: .8rem;
+}
+.message{
+    margin-top: -.12rem;
+    margin-left: .2rem;
+}
+.message .help-name{
+    font-size: .36rem;
+}
+.message .help-time{
+    font-size: .26rem;
+}
+.help-num{
+    flex: 1;
+    text-align: right;
+    font-size: .4rem;
+}
+/*了解小金*/
+.selectTag{
+    width: 100%;
+    text-align: center;
+    font-size: .3rem;
+    color:#362C51;
+    margin-top: .6rem;
+    padding-bottom: .43rem;
+}
+.img1{
+    width: 4rem;
+    height: 3.5rem;
+}
+.img2{
+    width: 4.07rem;
+    height: 3.31rem;
+}
+.img3{
+    height: 2.94rem;
+}
+.img4{
+    width: 4.25rem;
+    height: 3.08rem;
+}
+.stepTi{
+    color: #B34251;
+    font-size: .4rem;
+    padding: .23rem 0 .19rem 0;
+}
+.about_hr{
+    width: 5.9rem;
+    height: 0.02rem;
+    margin: .46rem 0 .6rem 0;
+}
+.txtStep1{
+    width: 5.9rem;
+    text-align: center;
+    margin: auto;
+    line-height: .53rem;
+}
+/************ 抽奖结果 ****************/
+.Lottery-results{
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+.Lottery-add{
+    width: 5.5rem;
+    height: 7.56rem;
+    background: url("../img/LotteryAdd.png") no-repeat;
+    background-size: 100% 100%;
+    margin:2.3rem auto 0 auto;
+    padding-top: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.Lottery-add .L1{
+    color: #FFF4C6;
+    font-size: .4rem;
+}
+.Lottery-add .Lnum{
+    color: #FFE061;
+    font-size: .48rem;
+}
+.Lottery-add .Lnum span{
+    font-size: .96rem;
+}
+.Lottery-add .L2{
+    font-size: .48rem;
+    color: #FFE061;
+}
+.add-btn{
+    width: 4.1rem;
+    height: 1rem;
+    margin: auto;
+    background: url("../img/add-btn.png") no-repeat;
+    background-size: 100% 100%;
+    color: #681809;
+    font-size: .36rem;
+    outline: none;
+}
+.Lottery-cut{
+    width: 5.5rem;
+    height: 7.3rem;
+    margin:2.7rem auto 0 auto;
+    padding-top: 4.18rem;
+    background: url("../img/LotteryCut.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.Lottery-cut .c1{
+    color: #681809;
+    font-size: .4rem;
+}
+.Lottery-cut .c2{
+    margin-top: .2rem;
+}
+.common{
+    color: #AC472B;
+    font-size: .4rem;
+}
+.Lottery-no{
+    width: 5.5rem;
+    height: 6.74rem;
+    margin:2.7rem auto 0 auto;
+    padding-top: 4.02rem;
+    background: url("../img/LotteryNo.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
