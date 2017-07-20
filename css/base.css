@@ -162,6 +162,9 @@ a,button,input,optgroup,select,textarea {
 .man-detail p{
     line-height: .47rem;
 }
+#fs{
+    line-height: 1.9;
+}
 /*账单  4*/
 .fourthPage-bg{
     background: url("../img/fourthPage-bg.png") no-repeat;
@@ -199,6 +202,8 @@ a,button,input,optgroup,select,textarea {
 }
 /************* 朋友圈分享 ****************/
 .friend-bg{
+    max-width: 640px;
+    margin: 0 auto;
     background: url("../img/friend-bg.png") no-repeat;
     background-size: 100% 100%;
     height: auto;
@@ -231,6 +236,11 @@ a,button,input,optgroup,select,textarea {
     justify-content: space-between;
     color: #fff;
     font-size: .3rem;
+}
+.inner-therm{
+    height:.26rem;
+    background: url('../img/progress-bg.png') no-repeat;
+    background-size:cover;
 }
 #lottery{
     position: relative;
@@ -352,6 +362,7 @@ a,button,input,optgroup,select,textarea {
     padding: 10px 0;
     text-align: center;
     cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)!important;
 }
 .opacity{
     color:rgba(54,44,81,.5);
@@ -411,18 +422,15 @@ a,button,input,optgroup,select,textarea {
 }
 .img1{
     width: 4rem;
-    height: 3.5rem;
 }
 .img2{
     width: 4.07rem;
-    height: 3.31rem;
 }
 .img3{
     height: 2.94rem;
 }
 .img4{
     width: 4.25rem;
-    height: 3.08rem;
 }
 .stepTi{
     color: #B34251;

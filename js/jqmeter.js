@@ -11,7 +11,7 @@
             "horizontal" != orientation && (n = "10px 0"), e(t).children(".outer-therm").children(".inner-therm").children().show(), e(t).children(".outer-therm").children(".inner-therm").children().css("padding", n), e({Counter: 0}).animate({Counter: e(t).children(".outer-therm").children(".inner-therm").children().text()}, {
             })
         }
-        e(t).append("<style>.therm{height:.26rem;border-radius:1rem;}.outer-therm{box-sizing: border-box;margin: .5rem auto 0 auto}.inner-therm{height:.26rem;background: url('http://localhost:63342/work/AnnualAccount_2017/img/progress-bg.png') no-repeat;background-size:100% 100%}</style>")
+        e(t).append("<style>.therm{height:.26rem;border-radius:1rem;}.outer-therm{box-sizing: border-box;margin: .5rem auto 0 auto}</style>")
     }, e.jQMeter.defaults = {
         width: "6.7rem",
         height: ".26rem",
